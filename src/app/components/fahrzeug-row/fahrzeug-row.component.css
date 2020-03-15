@@ -1,0 +1,48 @@
+.box {
+  background: #2d2d2d;
+}
+
+.status {
+  color: #212529;
+  height: 4vw;
+  width: 4vw;
+  font-size: 2vw;
+  margin: 10px;
+  font-family: "Source Sans Pro Black", sans-serif;
+  border-radius: 1.5vw;
+  border: 2px solid #212529;
+  transition: background-color 0.4s;
+  background-color: #6c757d;
+}
+
+.status.s1 {
+  background-color: #20c997;
+}
+
+.status.s2 {
+  background-color: #28a745;
+}
+
+.status.s3 {
+  background-color: #fd7e14;
+}
+
+.status.s4 {
+  background-color: #ffc107;
+}
+
+.status.s7 {
+  background-color: #6610f2;
+}
+
+.status.s8 {
+  background-color: #6f42c1;
+}
+
+.rufname {
+  font-size: 2.4vw;
+  color: white;
+  flex-grow: 2;
+  text-align: center;
+}
+

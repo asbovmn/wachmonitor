@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xl-2 col-3" *ngFor="let fahrzeug of fahrzeugList | callback: filterFahrzeug" @flyInOut>
+      <div class="w-100 box d-flex align-items-center justify-content-between shadow rounded my-2">
+        <div class="status d-flex align-items-center justify-content-center" [ngClass]="{
+    's1':fahrzeug.status.value === 1,
+    's2':fahrzeug.status.value === 2,
+    's3':fahrzeug.status.value === 3,
+    's4':fahrzeug.status.value === 4,
+    's7':fahrzeug.status.value === 7,
+    's8':fahrzeug.status.value === 8
+  }">
+          <span class="d-inline-block">{{fahrzeug.status.value}}</span>
+        </div>
+        <div class="rufname">
+          {{fahrzeug.rufname}}
+        </div>
+      </div>
+    </div>
+</div>

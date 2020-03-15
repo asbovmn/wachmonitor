@@ -1,3 +1,19 @@
+<div class="overlay position-absolute vw-100 vh-100 d-flex align-items-center justify-content-center" *ngIf="!connected">
+  <div class="rounded bg-light shadow border w-75 h-50">
+    <div class="container-fluid h-100">
+      <div class="row h-100 d-flex align-items-center justify-content-around ">
+        <div class="col-4">
+          <img src="/assets/alert-circle.svg" alt="connected" class="w-100 h-100" />
+        </div>
+        <div class="col-6">
+          <h1><b>Keine Verbindung zum Server</b></h1>
+          <h5>Bitte Netzwerkverbindung zum ELS-Container überprüfen.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="perspective-container vw-100 vh-100">
   <div class="flip-card-container" [class.show-back]="showBackside" (click)="toggle()">
     <div class="flip-card-front bg-asb">
@@ -5,18 +21,10 @@
         <app-dashboard></app-dashboard>
       </div>
     </div>
-    <div class="flip-card-back">
-      <div class="w-100 vh-100 bg-asb">
-        <div class="row vh-100">
-          <div class="col-5">
-            SD
-          </div>
-          <div class="col-7 bg-danger">
-            Map
-          </div>
-        </div>
+    <div class="flip-card-back bg-asb">
+      <div class="container-fluid vh-100">
+        <app-einsatz></app-einsatz>
       </div>
     </div>
   </div>
 </div>
-

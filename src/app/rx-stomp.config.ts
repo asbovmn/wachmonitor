@@ -1,7 +1,8 @@
 import { InjectableRxStompConfig } from '@stomp/ng2-stompjs';
+import {environment} from '../environments/environment';
 
 export const rxStompConfig: InjectableRxStompConfig = {
-  brokerURL: 'ws://localhost:8080/websocket',
+  brokerURL: environment.api,
   heartbeatOutgoing: 20000,
 
   debug: (msg: string): void => {

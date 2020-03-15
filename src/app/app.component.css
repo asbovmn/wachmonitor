@@ -25,3 +25,12 @@
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+.overlay {
+  z-index: 1050;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+h1 b {
+  font-family: "Source Sans Pro Bold", sans-serif;
+}

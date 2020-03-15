@@ -1,0 +1,24 @@
+.big-text {
+  font-size: 80px;
+  color: rgb(200, 10, 20);
+}
+
+.navbar-brand, .navbar-brand:hover {
+  font-family: "Source Sans Pro SemiBold", sans-serif;
+  color: rgb(200, 10, 20);
+  font-size: 2.5rem;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-asb {
+  border-bottom: 2px solid rgb(200, 10, 20);
+}
+
+.navbar-text {
+  font-size: 32px;
+  color: #212529;
+}
+
